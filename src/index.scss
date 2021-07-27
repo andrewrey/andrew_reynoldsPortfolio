@@ -1,3 +1,5 @@
+@import "./sassStyles/typography";
+
 /* Box sizing rules */
 *,
 *::before,
@@ -35,6 +37,7 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  font-family: $opn;
 }
 
 /* Set root div height */
