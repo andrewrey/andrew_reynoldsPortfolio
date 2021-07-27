@@ -1,4 +1,6 @@
 import styles from "./Main.module.css";
-const Main = () => {};
+const Main = () => {
+  return <main></main>;
+};
 
 export default Main;
