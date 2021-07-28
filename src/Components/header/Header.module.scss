@@ -1,4 +1,4 @@
-@import "../../sassStyles/typography";
+@import "../../sassStyles/typography", "../../sassStyles/mixins";
 
 .header {
   display: flex;
@@ -27,7 +27,11 @@
   }
 
   nav {
-    margin: 3rem 0;
+    display: none;
+    @include mq(768px) {
+      display: initial;
+      margin: 3rem 0;
+    }
   }
 }
 
