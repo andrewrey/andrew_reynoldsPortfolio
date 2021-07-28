@@ -18,6 +18,7 @@
     align-items: center;
   }
   button {
+    margin-top: 2rem;
     border-style: solid;
     background-color: transparent;
     border-color: white;
@@ -37,7 +38,17 @@
 
 h1 {
   font-family: $mont;
-  font-size: 4.5rem;
-  color: white;
+  font-size: 2.25rem;
+  @include mq(768px) {
+    font-size: 4.5rem;
+  }
+  color: #e5bb8d;
   font-weight: 400;
+  span {
+    display: block;
+    color: white;
+    @include mq(768px) {
+      display: inline;
+    }
+  }
 }

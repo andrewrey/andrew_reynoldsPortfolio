@@ -9,7 +9,9 @@ const Header = () => {
     <header className={styles.header}>
       <MobileNav />
       <Wrap name={styles["header__wrap"]}>
-        <h1>Andrew Reynolds - Front End Developer</h1>
+        <h1>
+          Andrew Reynolds <span>Front End Developer</span>
+        </h1>
         <Nav />
         <Button text={"Learn More"} />
       </Wrap>
