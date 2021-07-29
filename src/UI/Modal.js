@@ -9,17 +9,19 @@ const Backdrop = ({ onClose }) => {
 
 const ModalOverlay = ({ children }) => {
   return (
-    <div>
+    <div className={styles.modal}>
       <div>{children}</div>
     </div>
   );
 };
 
 const Modal = ({ children, onClose }) => {
-  <>
-    {createPortal(<Backdrop onClose={onClose} />, portalElements)}
-    {createPortal(<ModalOverlay>{children}</ModalOverlay>, portalElements)}
-  </>;
+  return (
+    <>
+      {createPortal(<Backdrop onClose={onClose} />, portalElements)}
+      {createPortal(<ModalOverlay>{children}</ModalOverlay>, portalElements)}
+    </>
+  );
 };
 
 export default Modal;
