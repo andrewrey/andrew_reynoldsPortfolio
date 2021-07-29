@@ -8,6 +8,7 @@ import Nav from "./Nav";
 const Header = () => {
   const [viewModal, setViewModal] = useState(false);
   const [windowSize, setWindowSize] = useState(window.innerWidth);
+
   const toggleViewHandler = () => {
     setViewModal((prevState) => !prevState);
   };
@@ -38,7 +39,7 @@ const Header = () => {
         <h1>
           Andrew Reynolds <span>Front End Developer</span>
         </h1>
-        <Nav />
+        {windowSize >= 768 && <Nav />}
         <Button text={"Learn More"} />
       </Wrap>
     </header>

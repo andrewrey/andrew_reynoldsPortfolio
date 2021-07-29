@@ -28,9 +28,7 @@
   }
 
   nav {
-    display: none;
     @include mq(768px) {
-      display: initial;
       margin: 3rem 0;
     }
   }
