@@ -1,9 +1,6 @@
 @import "../../sassStyles/mixins";
 
 .header__mobile_nav {
-  @include mq(768px) {
-    display: none;
-  }
   width: 100%;
   position: fixed;
   top: 0;
