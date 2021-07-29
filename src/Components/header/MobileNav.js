@@ -8,14 +8,19 @@ import styles from "./MobileNav.module.scss";
 
 const MobileNav = () => {
   const [viewModal, setViewModal] = useState(false);
+  const toggleViewHandler = () => {
+    setViewModal((prevState) => !prevState);
+  };
   return (
     <div className={styles.header__mobile_nav}>
-      <Modal>
-        <Nav />
-      </Modal>
+      {viewModal && (
+        <Modal onClose={toggleViewHandler}>
+          <Nav />
+        </Modal>
+      )}
       <Wrap name={styles.mobile__wrap}>
         <Logo />
-        <Hamburger />
+        <Hamburger onToggle={toggleViewHandler} />
       </Wrap>
     </div>
   );
