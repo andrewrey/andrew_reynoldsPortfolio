@@ -4,7 +4,6 @@ import Nav from "./Nav";
 import Hamburger from "../../UI/Hamburger";
 import Wrap from "../../UI/Wrap";
 import styles from "./MobileNav.module.scss";
-import { useEffect } from "react";
 
 const MobileNav = ({ onToggle, viewModal }) => {
   return (
