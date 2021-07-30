@@ -11,7 +11,7 @@ const MobileNav = ({ onToggle, viewModal, animation, onClose }) => {
       <div className={styles.header__mobile_nav}>
         {viewModal && (
           <Modal onClose={onClose} animationClass={animation}>
-            <Nav />
+            <Nav classes="modal__nav_list" />
           </Modal>
         )}
         <Wrap name={styles.mobile__wrap}>

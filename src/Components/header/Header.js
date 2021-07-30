@@ -50,7 +50,7 @@ const Header = () => {
         <h1>
           Andrew Reynolds <span>Front End Developer</span>
         </h1>
-        {windowSize >= 768 && <Nav />}
+        {windowSize >= 768 && <Nav classes="nav_list" />}
         <Button text={"Learn More"} />
       </Wrap>
     </header>

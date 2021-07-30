@@ -1,9 +1,9 @@
 import styles from "./Nav.module.scss";
 
-const Nav = () => {
+const Nav = ({ classes }) => {
   return (
     <nav>
-      <ul className={styles.nav_list}>
+      <ul className={styles[classes]}>
         <li>
           <a href="#about">About</a>
         </li>
