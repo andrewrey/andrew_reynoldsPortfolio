@@ -11,9 +11,9 @@ const Background = () => {
             The Background Story
           </h2>
         </div>
-        <div>
+        <div className={styles.background__decorations}>
           <div className={styles.background__circle_blue}></div>
-          <div>
+          <div className={styles.background__img_circles}>
             <div className={styles.background__circle_img1}></div>
             <div className={styles.background__circle_img2}></div>
           </div>
