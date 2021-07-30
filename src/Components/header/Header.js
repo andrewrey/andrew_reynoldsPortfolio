@@ -41,7 +41,6 @@ const Header = () => {
         <MobileNav
           onToggle={toggleViewHandler}
           onClose={closeModalHandler}
-          window={windowSize}
           viewModal={viewModal}
           animation={animation}
         />
