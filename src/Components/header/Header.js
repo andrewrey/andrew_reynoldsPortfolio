@@ -8,9 +8,18 @@ import Nav from "./Nav";
 const Header = () => {
   const [viewModal, setViewModal] = useState(false);
   const [windowSize, setWindowSize] = useState(window.innerWidth);
+  const [animation, setAnimation] = useState(true);
 
   const toggleViewHandler = () => {
     setViewModal((prevState) => !prevState);
+  };
+
+  const closeModalHandler = () => {
+    setAnimation(false);
+    setTimeout(() => {
+      setViewModal((prevState) => !prevState);
+      setAnimation(true);
+    }, 1000);
   };
 
   useEffect(() => {
@@ -31,8 +40,10 @@ const Header = () => {
       {windowSize < 768 && (
         <MobileNav
           onToggle={toggleViewHandler}
+          onClose={closeModalHandler}
           window={windowSize}
           viewModal={viewModal}
+          animation={animation}
         />
       )}
       <Wrap name={styles["header__wrap"]}>

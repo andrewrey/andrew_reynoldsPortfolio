@@ -5,12 +5,12 @@ import Hamburger from "../../UI/Hamburger";
 import Wrap from "../../UI/Wrap";
 import styles from "./MobileNav.module.scss";
 
-const MobileNav = ({ onToggle, viewModal }) => {
+const MobileNav = ({ onToggle, viewModal, animation, onClose }) => {
   return (
     <>
       <div className={styles.header__mobile_nav}>
         {viewModal && (
-          <Modal onClose={onToggle}>
+          <Modal onClose={onClose} animationClass={animation}>
             <Nav />
           </Modal>
         )}
