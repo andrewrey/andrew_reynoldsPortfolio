@@ -1,4 +1,26 @@
+@import "../../../sassStyles/typography", "../../../sassStyles/mixins";
+
 .background__wrap {
   width: 90%;
   margin: 0 auto;
+  h2 {
+    text-align: right;
+    font-family: $ubnt;
+    font-weight: 100;
+    font-size: 1.75rem;
+    span {
+      font-weight: bold;
+    }
+  }
+}
+
+.title {
+  margin: 2rem 0;
+}
+
+.background__circle_blue {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(31, 31, 223);
+  border-radius: 50%;
 }

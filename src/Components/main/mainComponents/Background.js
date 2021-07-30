@@ -4,15 +4,15 @@ const Background = () => {
   return (
     <section>
       <div className={styles.background__wrap}>
-        <div>
+        <div className={styles.title}>
           <h2>
-            Journey to becoming a <span>developer</span>
+            Becoming a <span>Front End Developer</span>
             <br />
             The Background Story
           </h2>
         </div>
         <div>
-          <div></div>
+          <div className={styles.background__circle_blue}></div>
           <div>
             <div></div>
             <div></div>
