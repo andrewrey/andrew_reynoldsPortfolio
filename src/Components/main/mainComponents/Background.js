@@ -17,7 +17,9 @@ const Background = () => {
             <div className={styles.background__circle_img1}></div>
             <div className={styles.background__circle_img2}></div>
           </div>
-          <div></div>
+          <div className={styles.background__circle_gold}>
+            <div className={styles.background__circle_gold__inner}></div>
+          </div>
         </div>
       </div>
     </section>
