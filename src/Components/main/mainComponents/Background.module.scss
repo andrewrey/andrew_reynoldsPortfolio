@@ -1,7 +1,7 @@
 @import "../../../sassStyles/typography", "../../../sassStyles/mixins";
 
 .background__wrap {
-  width: 90%;
+  width: 70%;
   max-width: 530px;
   margin: 0 auto;
   border: 4px solid yellow;
@@ -84,6 +84,7 @@
   border: 2px solid green;
   margin-top: 4rem;
   padding: 0 2rem;
+  background-color: rgb(226, 226, 226);
   h3 {
     font-family: $ubnt;
     font-size: 1.5rem;
