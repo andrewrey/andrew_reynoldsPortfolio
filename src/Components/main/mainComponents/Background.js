@@ -21,6 +21,11 @@ const Background = () => {
             <div className={styles.background__circle_gold__inner}></div>
           </div>
         </div>
+        <div className={styles.background__card}>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque nihil
+          explicabo totam excepturi repudiandae consequuntur voluptate pariatur
+          ea rem numquam.
+        </div>
       </div>
     </section>
   );
