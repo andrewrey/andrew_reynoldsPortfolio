@@ -22,9 +22,13 @@ const Background = () => {
           </div>
         </div>
         <div className={styles.background__card}>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque nihil
-          explicabo totam excepturi repudiandae consequuntur voluptate pariatur
-          ea rem numquam.
+          <h3>Lorem, ipsum dolor.</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque
+            nihil explicabo totam excepturi repudiandae consequuntur voluptate
+            pariatur ea rem numquam.
+          </p>
+          <button>learn more</button>
         </div>
       </div>
     </section>
