@@ -2,6 +2,9 @@
 
 .background {
   padding: 2rem 0 4rem;
+  @include mq(760px) {
+    padding-bottom: 0;
+  }
 }
 
 .background__wrap {
@@ -9,6 +12,9 @@
   @include mq(580px) {
     width: 95%;
     max-width: 1200px;
+  }
+  @include mq(1000px) {
+    height: 1200px;
   }
   margin: 0 auto;
   // border: 4px solid yellow;
@@ -32,6 +38,10 @@
 
 .title {
   margin: 0 0 2rem;
+  @include mq(1000px) {
+    position: relative;
+    top: 55px;
+  }
 }
 
 .background__decorations {
