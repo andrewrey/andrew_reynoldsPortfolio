@@ -2,7 +2,7 @@ import styles from "./Background.module.scss";
 
 const Background = () => {
   return (
-    <section>
+    <section className={styles.background}>
       <div className={styles.background__wrap}>
         <div className={styles.title}>
           <h2>
