@@ -14,12 +14,27 @@
     align-items: flex-start;
   }
 
+  @include mq(760px) {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    align-items: flex-end;
+  }
+
   li {
     background: white;
     width: 80%;
     max-width: 450px;
     padding: 1rem;
-    margin-left: 50px;
+    @include mq(580px) {
+      margin-left: 50px;
+    }
+    @include mq(760px) {
+      margin-left: 0;
+      margin-right: 50px;
+    }
     h2 {
       margin-bottom: 1.5rem;
       font-family: $ubnt;

@@ -5,11 +5,18 @@
 
 .skills__wrap {
   min-height: 500px;
+  @include mq(760px) {
+    position: relative;
+  }
   img {
     width: 400px;
     @include mq(580px) {
-      width: 100%;
+      width: 80%;
       max-width: 700px;
+    }
+    @include mq(760px) {
+      width: 95%;
+      max-width: 900px;
     }
   }
 }
