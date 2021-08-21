@@ -22,6 +22,9 @@
     bottom: 0;
     align-items: flex-end;
   }
+  @include mq(1500px) {
+    align-items: flex-start;
+  }
 
   li {
     background: white;
@@ -34,6 +37,11 @@
     @include mq(760px) {
       margin-left: 0;
       margin-right: 50px;
+    }
+    @include mq(1500px) {
+      margin-right: 0;
+      margin-left: 850px;
+      max-width: 600px;
     }
     h2 {
       margin-bottom: 1.5rem;
