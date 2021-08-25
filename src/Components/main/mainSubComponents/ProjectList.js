@@ -1,10 +1,15 @@
 import styles from "./ProjectList.module.scss";
-import ProjectItems from "./ProjectItem";
-
-const test = "test";
+import ProjectItem from "./ProjectItem";
+import projectData from "../../../projectData/projectData";
 
 const ProjectList = () => {
-  return <ul></ul>;
+  return (
+    <ul>
+      {projectData.map((item) => (
+        <ProjectItem img={item.img} alt={item.alt} />
+      ))}
+    </ul>
+  );
 };
 
 export default ProjectList;
